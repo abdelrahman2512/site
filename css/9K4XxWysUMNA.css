@@ -1,0 +1,183 @@
+.testimonail .wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    padding: 25px 20px 30px;
+    margin: auto;
+}
+.testimonail .arrow {
+    display: block;
+    position: absolute;
+    color: #1c1c1c;
+    cursor:pointer;
+    font-size:2em;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    padding: 5px;
+    z-index: 99;
+}
+.testimonail .arrow:hover {
+    color: var(--main-color);
+}
+.testimonail .arrow:before {
+    cursor: pointer;
+}
+.testimonail .arrow.left {
+    left: 10px;
+}
+.testimonail .arrow.right {
+    right: 10px;
+}
+.testimonail .dots {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    left: 0;
+    display:block;
+    z-index: 98;
+    height:12px;
+}
+.testimonail .dots .dot {
+    list-style-type: none;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border:1px solid #1c1c1c;
+    background-color: #333;
+    margin: 0 8px;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+.testimonail .dots .dot.active,
+.testimonail .dots .dot:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.testimonail .dots .dot.active {
+    animation: testim-scale 0.5s ease-in-out forwards;
+}
+.testimonail .cont {
+    position: relative;
+    overflow: hidden;
+}
+.testimonail .cont > div {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 0 0 70px 0;
+    opacity: 0;
+}
+.testimonail .cont > div.inactive {
+    opacity: 0;
+}
+.testimonail .cont > div.active {
+    opacity: 1;
+    position: relative;
+}
+.testimonail .cont div .img img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+.testimonail .cont div h2 {
+    color: var(--main-color);
+    font-size: 1em;
+    margin: 15px 0;
+}
+.testimonail .cont div p {
+    font-size: 1.15em;
+color:#222;
+    width:80%;
+    margin: auto;
+}
+
+.testimonail .cont div.active .img img {
+    animation: testim-show 0.3s ease-in-out forwards;
+}
+.testimonail .cont div.active h2 {
+    animation: testim-content-in 0.3s ease-in-out forwards;
+}
+.testimonail .cont div.active p {
+    animation: testim-content-in 0.3s ease-in-out forwards;
+}
+
+.testimonail .cont div.active .img img {
+    animation: testim-hide 0.3s ease-in-out forwards;
+}
+.testimonail .cont div.active h2 {
+    animation: testim-content-out 0.3s ease-in-out forwards;
+}
+.testimonail .cont div.active p {
+    animation: testim-content-out 0.3s ease-in-out forwards;
+}
+
+@keyframes testim-scale  {
+    0% {
+        box-shadow:  0px 0px 0px 0px #eee;
+    }
+    35% {
+        box-shadow:  0px 0px 10px 5px #eee;
+    }
+    70% {
+        box-shadow:  0px 0px 10px 5px var(--main-color);
+    }
+    100% {
+        box-shadow:  0px 0px 0px 0px var(--main-color);
+    }
+}
+
+@keyframes testim-content-in {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes testim-content-out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes testim-show {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes testim-hide {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@media (max-width:500px) {
+    .testimonail .arrow {
+        font-size: 1.5rem;
+    }
+}

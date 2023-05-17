@@ -1,0 +1,61 @@
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+}
+p {
+    line-height: 1.5;
+}
+.main-title p {
+    line-height: 1.5;
+}
+.btn {
+  background: linear-gradient(to left, var(--main-color) 50%, transparent 50%);
+  background-size: 230% 100%;
+  background-position: left bottom;
+}
+.btn:hover {
+  background-position: 99% 0;
+}
+header .container ul li a {
+    font-weight: 400;
+    padding: 10px;
+    line-height: 52px;
+}
+header .container ul li a::before,
+header .container ul li a::after {
+  right: -100%;
+}
+header .container ul li a:hover::before,
+header .container ul li a:hover::after,
+header .container ul li a.active::before,
+header .container ul li a.active::after {
+  right: 0;
+}
+.home .content h2 {
+    letter-spacing: 1px;
+}
+.about .info .details div p span {
+    margin-left: 5px;
+}
+.about .info .details div p+p {
+    direction: ltr;
+    display: inline-block;
+}
+.gallery-lightbox__popup--options a:first-child {
+  margin-right: 0;
+}
+.gallery-lightbox__popup--options a:last-child {
+  margin-right: 1.5rem;
+}
+.testimonail .cont div p {
+    font-size: 1em;
+    width: 70%;
+    line-height: 1.6;
+}
+footer {
+    line-height: 1.8;
+}
+footer span {
+  font-size: 28px;
+    letter-spacing: 0.1px;
+}
