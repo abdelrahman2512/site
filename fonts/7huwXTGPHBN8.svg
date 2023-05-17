@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../js/punycode.js"></script>
+<script type="text/javascript">
+var pattern = /www\./i;
+var domena = location.host;
+if (domena.match(pattern)) {
+	domena = domena.substr(4);
+}
+domena = toUnicode(domena);
+</script>
+<title>Тимчасова сторінка</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+<!--start:!isRtl-->
+<style type="text/css">
+html,body
+{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif, Verdana, Helvetica;
+	background-color: transparent;
+	color: #0D56C2;
+	font-weight:normal;
+	background: url(../images/404.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
+body > table
+{
+	filter: none !important;
+}
+a:link,a:visited,a:hover
+{
+	color: #0D56C2;
+}
+.domain
+{
+	font-weight:bold;
+	font-size: 120%;
+}
+h2
+{
+	font-weight: normal;
+}
+.first_part
+{
+	border-bottom: 1px solid #C5C5C5;
+	padding: 10px;
+	padding-bottom: 40px;
+}
+.first_part img
+{
+	height:100px;
+	margin-bottom: 30px;
+}
+td	img
+{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.tools td div
+{
+	width: 150px;
+	text-align:left;
+	height:40px;
+}
+.tools td div a
+{
+	text-decoration: none;
+}
+.tools td:hover a
+{
+	text-decoration: underline;
+}
+.tools td div a:first-child
+{
+	float:left;
+	vertical-align: middle;
+}
+.tools td div a:last-child
+{
+	vertical-align: middle;
+	line-height: 1.2;
+}
+table td, table tr, table
+{
+	padding:0px;
+	margin:0px;
+	border-spacing: 0px;
+}
+.cbalink
+{
+	color: #ffffff;
+}
+.cbalink a
+{
+	color: #ffffff;
+}
+#logo
+{
+	background: url(../images/logo_zzz.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 350px;
+	height: 90px;
+	margin: 0 10px;
+	padding-top: 40px;
+}
+@media all and (max-width: 1400px)
+{
+	.maintable
+	{
+		margin-top: 0px !important;
+	}
+}
+@media all and (max-width: 1024px)
+{
+	table
+	{
+		width: 100% !important;
+	}
+	.maintable
+	{
+		margin-top: 0px !important;
+	}
+}
+</style>
+<!--end:!isRtl-->
+</head>
+<body>
+<a href="https://zzz.com.ua/"><div id="logo"></div></a>
+<table class="maintable" style="width:100%;" border="0">
+	<tr>
+		<td height="551" style="vertical-align: top;"><table border="0" style="width:100%;background-color: rgba(255,255,255,0.85);">
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right">&nbsp;</td>
+			</tr>
+			<tr>
+				<td height="348" align="center">
+			<table style="width:50%" height="200" border="0">
+						<tr>
+							<td align="center" valign="middle" style="vertical-align:middle;padding: 1px; margin:3px;"><div class="first_part"><img src="../images/startpage_www.png" alt="Вітаємо на сторінці"><h2>Вітаємо на сторінці <br><span class="domain"> <script type="text/javascript">document.write(domena);</script></span>
+								</h2>
+								Завантажте всі файли до головного каталогу на вашому акаунті.
+							</div>
+							<table style="width:50%;table-layout:fixed; width:100%;margin-top: 20px;margin-bottom: 30px;" class="tools">
+								<tr align="center">
+									<td style="vertical-align:middle;"><div><a href="https://zzz.com.ua/panel/"><img src="../images/startpage_panel.png" width="40" height="41" alt="Control panel"></a><a href="https://zzz.com.ua/panel/" class="link">Панель</a></div></td>
+									<td style="vertical-align:middle;"><div><a href="https://zzz.com.ua/mail/"><img src="../images/startpage_email.png" width="40" height="41" alt="Web mail"></a><a href="https://zzz.com.ua/mail/" class="link">Пошта</a></div></td>
+									<td style="vertical-align:middle;"><div><a href="https://zzz.com.ua/uk/ftplogin/"><img src="../images/startpage_ftp.png" width="40" height="41" alt="Filemanager"></a><a href="https://zzz.com.ua/uk/ftplogin/" class="link">Файловий менеджер</a></div></td>
+								</tr>
+							</table>
+								</td>
+						</tr>
+					</table>
+		</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+</body>
+</html>
